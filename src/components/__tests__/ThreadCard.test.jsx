@@ -37,9 +37,9 @@ describe('ThreadCard component', () => {
         <BrowserRouter>
           <ThreadCard thread={fakeThread} owner={fakeOwner} />
         </BrowserRouter>
-      </Provider>
+      </Provider>,
     );
-    
+
     // assert
     expect(screen.getByText('Thread Pertama')).toBeInTheDocument();
     expect(screen.getByText('John Doe')).toBeInTheDocument();

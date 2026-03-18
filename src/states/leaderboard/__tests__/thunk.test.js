@@ -1,4 +1,6 @@
-import { describe, beforeEach, it, vi, expect } from 'vitest';
+import {
+  describe, beforeEach, it, vi, expect,
+} from 'vitest';
 import * as api from '../../../utils/api';
 import { asyncGetLeaderboard } from '../slice';
 
@@ -10,10 +12,10 @@ const fakeLeaderboardResponse = [
       id: 'users-1',
       name: 'John Doe',
       email: 'john@example.com',
-      avatar: 'https://generated-image.url/jpg'
+      avatar: 'https://generated-image.url/jpg',
     },
-    score: 10
-  }
+    score: 10,
+  },
 ];
 
 describe('asyncGetLeaderboard thunk', () => {

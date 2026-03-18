@@ -1,5 +1,5 @@
-import leaderboardReducer from '../slice';
 import { describe, it, expect } from 'vitest';
+import leaderboardReducer from '../slice';
 
 describe('leaderboardReducer function', () => {
   it('should return the initial state when given by unknown action', () => {
@@ -25,10 +25,10 @@ describe('leaderboardReducer function', () => {
             id: 'users-1',
             name: 'John Doe',
             email: 'john@example.com',
-            avatar: 'https://generated-image.url/jpg'
+            avatar: 'https://generated-image.url/jpg',
           },
-          score: 10
-        }
+          score: 10,
+        },
       ],
     };
 
