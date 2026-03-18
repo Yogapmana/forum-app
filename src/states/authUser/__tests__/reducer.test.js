@@ -31,6 +31,6 @@ describe("authUserReducer function", () => {
     const nextState = authUserReducer(initialState, action);
 
     // assert
-    expect(nextState).toEqual("action.payload");
+    expect(nextState).toEqual(action.payload);
   });
 });
